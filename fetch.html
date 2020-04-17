@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+  <script>
+
+    // https://randomuser.me/api/
+    // fetch('https://randomuser.me/api/')
+    //   // .then => permet d'indiquer ce qu'on doit
+    //   // faire avec la réponse, une fois qu'on l'a reçue
+    //   .then(response => response.text())
+    //   .then(data => console.log(data))
+    //   .catch(error => console.log(error));
+    axios.get('https://google.fr/')
+      .then(response => response.data)
+      .then(data => console.log(data))
+      .catch(error => console.log(error))
+  </script>
+</body>
+
+</html>
